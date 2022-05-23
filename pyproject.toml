@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "rsg-release-monitoring"
+version = "0.1"
+description = "Python project for continous monitoring of XLR releases"
+authors = ["Sandor Berczi"]
+maintainers = ["Sandor Berczi"]
+readme="README.md"
+homepage=""
+repository="https://github.com/BercziSandor/rsg-release-monitoring"
+documentation=""
+keywords=['python', 'xlr', 'monitoring']
+packages = [
+    { include = "rsg-release-monitoring.py" }
+]
+
+classifiers=[
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Development Status :: 3 - Alpha',
+    'Operating System :: OS Independent',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Utilities',
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+urllib3 = "^1.26.9"
+markdown-table-generator = "^1.1.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
